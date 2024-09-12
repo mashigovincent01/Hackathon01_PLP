@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>VM Mashigo</title>
+    <script src="https://kit.fontawesome.com/5645b1461d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <p><span class="blue-color">V</span>incent</p>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><i class="fa-solid fa-moon" id="theme" onclick="toggleTheme()"></i></li> -->
+                    
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-row">
+                <div class="header-text">
+                    <P>Full-Stack Developer</P>
+                    <h1>Hi, I'm <span>Vincent</span> <br>Mashigo From SA</h1>
+                </div>
+                <div id="image-div">
+                    <img src="images/background-22-modified.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- <img src="images/user.png" alt=""> -->
+                    <i class="fa-solid fa-address-card" style="font-size: 200px"></i>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a passionate full-stack web developer with a strong background in mentoring and community engagement.
+                         I proudly served as a mentor in the STARS Mentorship Program, where 
+                         I guided aspiring students. My technical expertise was demonstrated through
+                          successfully executing a community project via the JCP initiative. Additionally,
+                           I contribute to the academic community as a private tutor specializing in C# programming,
+                            helping individuals navigate software development complexities.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Programming Languages</p>
+                        <p class="tab-links" onclick="opentab('experience')">Interests</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="interests-container">
+                            <div class="interest-card">
+                                <h3>HTML and CSS</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>Javascript</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>C, C++, C#</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>ASP.NET MVC</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>Assembly, VHDL</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>Figma</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>SQL</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>Python</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>MongoDB</h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2023 (University of Pretoria)</span><br>Computer Engineering</li>
+                            <li><span>2014-2018 (Modilati Secondary School)</span><br>High School</li>
+                            
+                            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <div class="interests-container">
+                            <div class="interest-card">
+                                <h3>Web Development</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>Contineous Learning</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>Coding Challenges</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>Singing</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>Fitness</h3>
+                                
+                            </div>
+                            <div class="interest-card">
+                                <h3>Team collaboration</h3>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+     <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni, animi pariatur error molestias quam aperiam suscipit accusantium explicabo veniam a nihil quos facilis commodi deserunt nam asperiores sit in?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni, animi pariatur error molestias quam aperiam suscipit accusantium explicabo veniam a nihil quos facilis commodi deserunt nam asperiores sit in?</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div> 
+                    <i class="fab fa-app-store" ></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni, animi pariatur error molestias quam aperiam suscipit accusantium explicabo veniam a nihil quos facilis commodi deserunt nam asperiores sit in?</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+     </div> -->
+
+     <!-- portforlio -->
+
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Dynamic ToDo App</h3>
+                        <p>This project showcases a dynamic todo list application that integrates techniques from the course,
+                             such as object creation, project management, and data persistence. It features a clean UI,
+                             robust functionality, and localStorage for persistent data across sessions.
+                        </p>
+                        <a href="https://github.com/mashigovincent01/TheOrdinProject_06_ToDoListApp" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Student Management App</h3>
+                        <p>
+                            CRUD (Create, Read, Update, Delete) application for managing student records.
+                             The application is built using ASP.NET MVC
+                             and interacts with a SQL Server database to perform CRUD operations.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Capetropolis Lodging and Meals Management System</h3>
+                        <p>This project was developed as part of an assignment to demonstrate the
+                             implementation of a full-featured web application using ASP.NET MVC. 
+                             Special thanks to all the tutorials
+                             and resources that helped in understanding various aspects of web development.
+                        </p>
+                        <a href="https://github.com/mashigovincent01/INF272_Assignment_1V2" target="_blank">
+                            <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+
+     <!-- contact -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>wethinkandwork407@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>0614077006</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required id="name">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>by Mashigo VM &copy;2024 <a href="https://github.com/mashigovincent01"><i id="github-icon" class="fa-brands fa-github"></i></a></p>
+        </div>
+      </div>
+
+
+      <script src="index.js"></script>
+
+</body>
+</html>
